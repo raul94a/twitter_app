@@ -1,0 +1,27 @@
+.app-container{
+    background: rgb(1, 1, 7);
+
+    height: auto;
+    border-left: 1px solid rgba(150, 150, 150, 0.582);
+    border-right: 1px solid rgba(150, 150, 150, 0.582);
+    border-bottom: 1px solid rgba(150, 150, 150, 0.582);
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+  
+ 
+
+}
+.app-container h4{
+    margin:0;
+    padding: 10px;
+    color:white;
+    font-size: 20px;
+}
+.form-container-control{
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items:flex-start;
+    width: 100%;
+}

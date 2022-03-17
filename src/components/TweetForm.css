@@ -1,0 +1,121 @@
+body {
+    background: rgb(1, 1, 7);
+}
+
+
+.tweet-form {
+    background: rgb(1, 1, 7);
+    /* border: 1px solid red; */
+    max-width: 100%;
+    min-width: 300px;
+    /* max-height: 150px; */
+
+    margin: 0 auto;
+    width: 80%;
+}
+
+
+.tweet-form textarea {
+    color: white;
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    /* width: 34.8vw; */
+    width: 98%;
+    max-width: 98vw;
+    min-width: 280px;
+    margin: 0 auto;
+    height: auto;
+    resize: none;
+    overflow-y: hidden;
+    max-lines: 20;
+    /* padding: 0.75rem; */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.tweet-form textarea:focus {
+    outline: none;
+}
+
+.tweet-form input::placeholder {
+    font-size: 18px;
+}
+
+.tweet-form-info-span {
+    font-weight: bold;
+    font-size: 14px;
+    padding: 0.2rem 1rem 0.2rem 1rem;
+    color: rgb(29, 155, 240)
+}
+.tweet-form-info-span:hover{
+    cursor: pointer;
+    background: rgba(95, 183, 241, 0.123);
+    
+    border-radius: 25px;
+}
+
+
+.tweet-form-container-actions {
+    display: flex;
+    border-top: 1px solid rgba(150, 150, 150, 0.582);
+    margin-top: 2%;
+    padding: 1rem 1rem 1rem 1rem;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.tweet-form button {
+    border: none;
+    background: rgb(52, 146, 223);
+    padding: .4rem 1.2rem .4rem 1.2rem;
+    height: 35px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.tweet-form button:hover{
+    transition: all 200ms ease-in;
+    background: rgb(36, 110, 170);
+}
+.tweet-form button:disabled{
+    background: rgba(50, 122, 180, 0.637);
+    filter: opacity(70%);
+    cursor:  auto;
+}
+
+.tweet-form-actions {
+    display: flex;
+    width: 100%;
+  
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tweet-form-actions div, 
+.tweet-form-actions p {
+    color: white;
+}
+.tweet-form-actions .actions{
+    width: 75%;
+   
+}
+.tweet-form-actions p span{
+    color:white;
+    font-weight: normals;
+}
+
+.tweet-form-actions .error{color: red;}
+
+.tweet-form-ui-data{
+    width: 25%;
+  
+    display: flex;
+    padding: 0 0.5rem 0 0.5rem;
+    justify-content: space-between;
+    align-items: center;
+}

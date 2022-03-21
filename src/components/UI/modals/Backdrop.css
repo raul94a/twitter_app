@@ -1,0 +1,8 @@
+.backdrop-active{
+    position: absolute;
+    width: 100vw;
+    
+    overflow: hidden;
+    background: rgba(19, 19, 19, 0.623);
+    z-index: 90;
+}

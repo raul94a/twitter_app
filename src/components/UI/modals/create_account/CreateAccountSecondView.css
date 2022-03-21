@@ -1,0 +1,38 @@
+.create-account-second-view-container h2{
+    color: white;
+}
+
+.checkbox-container{
+    
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.checkbox-container .checkbox-container-span{
+    width: 90%;
+    transform: translate(0px,0px);
+}
+.checkbox-container input[type="checkbox"]{
+   width: 20px;
+   height: 20px;
+   
+}
+input[type="checkbox"]:checked::before{
+    color: red;
+    background-color: green;
+}
+
+.enter-page-animation{
+    animation: enter-page 800ms ease-in;
+}
+
+@keyframes enter-page {
+    0%{
+        transform: translateX(-600px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}

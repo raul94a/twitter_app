@@ -22,3 +22,5 @@ export const getConicGradient = (degrees) => {
     )`;
 
 }
+
+export const fromMillisToMinutes = (milliseconds) => parseInt((Date.now() - milliseconds) / 60000);

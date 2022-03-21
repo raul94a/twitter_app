@@ -1,0 +1,9 @@
+.error-email::after{
+    content: 'El email ya existe';
+    color: red;
+    margin-top:5px;
+    font-size: 12px;
+}
+label.error-email{
+    border: 1px solid red;
+}

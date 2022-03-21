@@ -1,0 +1,7 @@
+.inputs-container{
+    display: flex;
+    height: 50%;
+    flex-direction: column;
+    justify-content: space-around;
+
+}

@@ -1,0 +1,24 @@
+/* .footer-landing-page nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+} */
+.footer-landing-page{
+    position: relative;
+    width: 100vw;
+    margin-top: 35px;
+  
+}
+
+
+.footer-landing-page nav a{
+    text-decoration: none;
+    
+    margin: 0 auto;
+    color: rgb(121, 121, 121);
+    font-size: 12px;
+    
+    padding: 0.5rem;
+    
+  
+}

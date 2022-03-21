@@ -1,0 +1,51 @@
+.landing-page-actions-container svg{
+    width: 20px;
+}
+.landing-page-actions-container .apple-logo{
+    width: 20px;
+}
+.landing-page-actions-container button,
+.landing-page-actions-container .google-button,
+
+.register-button
+{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    padding-top: 0.55rem;
+    padding-bottom: 0.55rem;
+    margin-bottom: 1rem;
+    margin-left: 3.54rem;
+    border-radius: 25px;
+    border:none;
+    
+
+}
+.register-button{
+    margin-top: 20px;
+    background:rgb(67, 140, 224);
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding-top:0.85rem;
+    padding-bottom: 0.85rem;
+    margin-bottom: 0;
+}
+.landing-page-actions-container span{
+    margin-left: 10px;
+}
+.landing-page-actions-container button:hover{
+    cursor: pointer;
+}
+.google-action-span{
+    /* margin-left: 12px; */
+    font-weight: 700;
+    transform: translateX(4px);
+    color: rgb(88, 88, 88);
+
+}
+.apple-action-span{
+    font-weight: bold;
+}

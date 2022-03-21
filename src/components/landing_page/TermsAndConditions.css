@@ -1,0 +1,14 @@
+.terms-and-conditions{
+    color: rgb(129, 129, 129);
+    width: 35%;
+    margin:0;
+    
+    margin-left:3.54rem;
+    font-size: 11px;
+    word-break: break-word;
+    margin-top:5px;
+}
+
+.terms-and-conditions span{
+    color: rgb(29, 155, 240);
+}

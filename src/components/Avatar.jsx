@@ -1,5 +1,5 @@
 import './Avatar.css'
-import  avatar from  '../img/food.png';
+import  avatar from  '../assets/img/food.png';
 const Avatar = (props) => {
     return (
        <img className='avatar' src={avatar}></img>

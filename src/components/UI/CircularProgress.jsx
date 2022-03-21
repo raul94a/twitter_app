@@ -8,8 +8,8 @@ const CircularProgress = (props) => {
     const gradient = getConicGradient(degrees);
     
     return (
-        <div class="circle" style={{ background: gradient }}>
-            <p class="value">{120 - characters}</p>
+        <div className="circle" style={{ background: gradient }}>
+            <p className="value">{120 - characters}</p>
         </div>
     )
 }

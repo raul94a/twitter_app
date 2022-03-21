@@ -1,0 +1,21 @@
+.flex-row{
+    display:flex;
+   
+    align-items:center;
+}
+.divider-container{
+    width: 45%;
+}
+.divider-line{
+    margin-left: 3.54rem;
+    width: 100%;
+    
+    height: 1px;
+    background-color: grey;
+}
+.divider-center-character{
+    color:white;
+    font-size: 25px;
+    width: 10px;
+    margin-left: 3.54rem
+}

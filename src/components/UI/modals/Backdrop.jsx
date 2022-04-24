@@ -8,7 +8,7 @@ const Backdrop = (props) => {
     const [height,setHeight] = useState(0);
     const dispatch = useDispatch();
     function closeModal(){
-        dispatch(uiControlActions.shouldCloseModal())
+        dispatch(uiControlActions.closeAllModals())
     }
     useEffect(()=>{
         if(!height){

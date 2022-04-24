@@ -5,9 +5,14 @@ import TweetCard from './tweet_card/TweetCard'
 import { useHttp } from '../hooks/use-http'
 import { useEffect } from 'react'
 import { tweetActions } from '../store'
-import { authActions } from '../store'
 import { useSelector, useDispatch } from 'react-redux'
+import NavBar from './nav/NavBar'
+import CommunicationColumn from './communication/CommunicationColumn'
 
+
+// document.body.onscrol(()=>{
+//     console.log('asdfjlasf')
+// });
 
 const AppContainer = (props) => {
     const { request } = useHttp();
@@ -34,24 +39,28 @@ const AppContainer = (props) => {
 
         getTweets()
 
-
+        
     }, [])
+   
     return (
+        <main>
+           <NavBar/>
 
-        <section className='app-container'>
-            <h4>Inicio</h4>
-            <div className="form-container-control">
-                <Avatar />
 
-                <TweetForm />
-            </div>
-            <section className='tweets-container'>
-                {tweets && tweets.map(tweet => <TweetCard key={tweet.id} {...tweet} />)}
+            <section className='app-container'>
+                <h4>Inicio</h4>
+                <div className="form-container-control">
+                    <Avatar />
+                    <TweetForm />
+                </div>
+                <section className='tweets-container' >
+                    {tweets && tweets.map(tweet => <TweetCard key={tweet.id} {...tweet} />)}
+                </section>
             </section>
 
+            <CommunicationColumn/>
 
-        </section>
-
+        </main>
     )
 }
 export default AppContainer

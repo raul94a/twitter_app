@@ -1,0 +1,7 @@
+-Cambiar el tipo de letra de ¿Qué esta pasando?
+-Poner los botones de accion de enviar el tweet
+-Columna izquierda. Navegación.
+-Columna derecha -> Solo diseño por ahora ->ojo, puede ser interesante
+    -Busqueda
+    -Qué está pasando    
+    -A quién seguir

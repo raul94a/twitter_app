@@ -1,0 +1,41 @@
+.communication-column{
+   width: 30vw;
+   margin-left: 25px;
+   position: fixed;
+   
+}
+.communication-wrapper{
+    width: 25vw;
+}
+
+.search-logo{
+    width: 20px;
+    height: 20px;
+    fill:grey
+}
+.communication-search{
+    width: 100%;
+    height: 40px;
+    margin-top:5px;
+    z-index:500;
+    
+    
+}
+.communication-search label{
+    background-color: rgba(128, 128, 128, 0.281);
+    width: 75%;
+    height: 45px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start
+}
+.communication-search svg{
+    margin-left: 20px;
+    margin-right: 20px;
+} 
+.communication-search input{
+    border: none;
+    background-color: transparent;
+    color: white;
+}

@@ -7,9 +7,10 @@ import './CreateAccountRegister.css'
 // import { useStore } from 'react-redux'
 import { useDispatch } from 'react-redux'
 import { useState } from 'react'
+import TwitterInputPassword from '../../inputs/TwitterInputPassword';
 const CreateAccountRegister = (props) => {
 
-    const { nameInput, setNameInput, emailInput, setEmailInput, dateInput, setDateInput } = props;
+    const { nameInput, setNameInput, emailInput, setEmailInput, dateInput, setDateInput, passwordInput, setPasswordInput} = props;
     const [loading, setLoading] = useState(false)
     const [error, setError] = useState(false);
     const dispatch  = useDispatch();
@@ -31,6 +32,7 @@ const CreateAccountRegister = (props) => {
                         error={error}
                     />
                     <TwitterDateInput dateInput={dateInput} setDateInput={setDateInput} />
+                    <TwitterInputPassword passwordInput={passwordInput} setPasswordInput={setPasswordInput}/>
                 </div>
 
                 <button type="submit" disabled={loading}
@@ -39,7 +41,7 @@ const CreateAccountRegister = (props) => {
                         setLoading(true)
                         e.preventDefault();
                         try{
-                            let userData = await signUpWithEmail(emailInput, nameInput);
+                            let userData = await signUpWithEmail(emailInput, nameInput, passwordInput);
                             console.log(userData)
                             dispatch(authActions.setCredentials({...userData}));
 

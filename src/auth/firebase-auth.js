@@ -30,8 +30,8 @@ export default firebase;
 
 export const signInWithGoogle = () => auth.signInWithPopup(provider);
 
-export const signInWithEmail = async email =>  {
-  const userData =  await  auth.signInWithEmailAndPassword(email, firebaseConfig.apiKey);
+export const signInWithEmail = async (email,password) =>  {
+  const userData =  await  auth.signInWithEmailAndPassword(email, password);
   let _delegate = userData['user']['_delegate'];
   const {accessToken: idToken, uid} = _delegate
   return{
@@ -41,8 +41,8 @@ export const signInWithEmail = async email =>  {
 }
 
 
-export const signUpWithEmail = async (email, username) => {
-  let data = await auth.createUserWithEmailAndPassword(email, firebaseConfig.apiKey)
+export const signUpWithEmail = async (email, username, password) => {
+  let data = await auth.createUserWithEmailAndPassword(email, password)
   let _delegate = data['user']['_delegate'];
   const {accessToken, uid} = _delegate
   await registerUser(uid, username,email);

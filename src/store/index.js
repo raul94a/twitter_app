@@ -12,13 +12,29 @@ const authInitialState = {
 
 const uiControlSlice =  createSlice({
     name: 'ui',
-    initialState: {openModal:false},
+    initialState: {openModal:false, loginModal:false, showHappeningsFirstElements: true},
     reducers: {
         shouldOpenModal(state,action){
             state.openModal = true
         },
         shouldCloseModal(state,action){
             state.openModal = false
+        },
+        openLoginModal(state,action){
+            state.loginModal = true
+        },
+        closeLoginModal(state,action){
+            state.loginModal = false
+        },
+        closeAllModals(state,action){
+            state.loginModal = false;
+            state.openModal = false;
+        },
+        hideHappeningsFirstElements(state,actions){
+            state.showHappeningsFirstElements = false;
+        },
+        showHappeningsFirstElements(state,actions){
+            state.showHappeningsFirstElements = true;
         }
     }
 })

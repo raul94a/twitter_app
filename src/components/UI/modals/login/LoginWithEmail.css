@@ -1,0 +1,30 @@
+.inputs-container-login{
+    display: flex;
+    height: 70%;
+    flex-direction: column;
+    justify-content: center;
+  
+}
+.inputs-container-login > * {
+    margin-bottom: 14px;
+}
+.login-info{
+    
+    color: rgba(158, 158, 157, 0.767);
+    font-size: 12px;
+   ;
+}
+.login-info button{
+    background: transparent;
+    border: none;
+    color: rgba(158, 158, 157, 0.767);
+}
+.login-info  button:hover{
+    color: transparent;
+    border: none;
+    border-radius: 0%;
+}
+.create-account-form button:hover{
+    transition: all 400ms ease-in-out;
+    background-color: rgb(236, 251, 253);
+}

@@ -1,0 +1,51 @@
+.happening-element{
+    padding-left: 1rem;
+    padding-bottom: 0.1rem;
+}
+
+.happening-element:hover{
+    background-color: rgba(49, 49, 49, 0.219);
+}
+
+
+
+.happening-element:last-of-type{
+    
+    padding-bottom: 1rem;
+}
+.happening-element:last-of-type:hover{
+    
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+.happening-element:last-of-type::after{
+    content: 'Mostrar más';
+    color: rgb(29, 155, 240);
+    font-size: 14px;
+    font-weight: 400;
+}
+.happening-element:last-of-type:hover::after{
+   cursor: pointer;
+    
+}
+
+.happening-element p {
+    color: rgb(161, 161, 161)
+}
+.happening-header{
+    margin-bottom: 3px;
+    font-size: 13px;
+
+}
+.happening-element p.happening-title{
+    margin:0;
+    color: white;
+    font-size: 16px;
+    width: 70%;
+    font-weight: bold;
+}
+.tweets-number{
+    margin-top:3px;
+    font-size: 13px;
+    
+}

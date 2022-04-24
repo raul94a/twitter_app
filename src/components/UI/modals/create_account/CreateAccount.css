@@ -2,24 +2,30 @@
     padding:1.5rem 2.5rem
 }
 
-.create-account-header{
+.auth-header{
     width: 53%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
-.create-account-header button{
+.auth-header button{
     background: transparent;
     color:white;
     border: none;
-    padding: 1.5rem;
+    margin: 1rem;
     font-size: 20px;
-    border-radius:50%
-
-
+    border-radius:50%;
+    padding: 12px;
+    
 }
-.create-account-logo{
+.auth-header button:hover{
+    background-color: rgba(179, 178, 178, 0.295);
+}
+.auth-logo{
     width:35x;
     height: 35px;;
+}
+.auth-logo:hover{
+    fill:rgb(54, 136, 212)
 }

@@ -1,0 +1,36 @@
+.flex-row-bet{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-card:hover{
+    background-color: rgba(90, 90, 90, 0.151);
+}
+.padding-card{
+    padding-left: 0.5rem;
+    padding-right: 1rem;
+}
+.user-info-wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.user-info p {
+    margin: 0;
+}
+.username{
+    color: white;
+}
+.alias{
+    color: grey;
+}
+.follow-btn{
+    width: 80px;
+    height: 35px;
+    border-radius: 40px
+    ;background-color: white;
+    color: black;
+    font-weight: 700;
+    font-size: 14px;
+}

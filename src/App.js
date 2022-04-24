@@ -7,11 +7,8 @@ function App() {
   const userIsLoggedIn = useSelector(state => state.auth.loggedIn);
   return (
     <>
-
-      {/* <Backdrop /> */}
       {!userIsLoggedIn && <LandingPage />}
       {userIsLoggedIn && <AppContainer />}
-
     </>
   );
 }

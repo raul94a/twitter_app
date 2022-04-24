@@ -1,0 +1,22 @@
+.nav-container{
+    width: 400px;
+    
+}
+.nav-wrapper{
+    width: 400px;
+    display: flex;
+    position: fixed;
+}
+
+.navbar{
+    width: 180px;
+    max-width: 100%;
+}
+.nav-spacer{
+    width: 150px;
+}
+.logo-nav-bar{
+    margin-top: 15px;
+    width:28px;
+    height: 28px;
+}

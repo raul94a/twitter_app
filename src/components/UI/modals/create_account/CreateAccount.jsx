@@ -12,6 +12,8 @@ const CreateAccount = (props) => {
     const [nameInput, setNameInput] = useState('')
     const [emailInput, setEmailInput] = useState('');
     const [dateInput, setDateInput] = useState('');
+    const [passwordInput, setPasswordInput] = useState('')
+    //render state => mejorar con maps de componentes
     const [renderSecondView, shouldRenderSecondView] = useState(null)
     const [renderRegister, shouldRenderRegister] = useState(null)
     const formState = {
@@ -32,13 +34,20 @@ const CreateAccount = (props) => {
     return (
         <>
 
-            <header className="create-account-header">
+            <header className="auth-header">
                 <button onClick={closeModal}>X</button>
-                <TwitterLogo className="create-account-logo" />
+                <TwitterLogo className="auth-logo" />
             </header>
+            {/* Mejorar renders con un mapa de componentes */}
             {!renderSecondView &&<CreateAccountFirstView {...formState} />}
             {renderSecondView && !renderRegister && <CreateAccountSecondView shouldRenderRegister={shouldRenderRegister}/>}
-            {renderRegister && <CreateAccountRegister {...formState}/>}
+            {renderRegister && 
+                <CreateAccountRegister 
+                    {...formState} 
+                    passwordInput={passwordInput} 
+                    setPasswordInput={setPasswordInput}
+                />
+            }
 
         </>
     )

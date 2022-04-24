@@ -1,0 +1,15 @@
+.communication-container p.show-more{
+    color: aqua;
+    padding-top: 0.25rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    color: rgb(29, 155, 240);
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    font-size: 14px;
+    font-weight: 400;
+}
+p.show-more:hover{
+    background-color: rgba(49, 49, 49, 0.219);
+
+}

@@ -7,6 +7,7 @@ import { signInWithEmail, getUser } from '../../../../auth/firebase-auth';
 import TwitterLogo from '../../../svg_logos/TwitterLogo';
 import TwitterInputEmail from '../../inputs/TwitterInputEmail';
 import TwitterInputPassword from '../../inputs/TwitterInputPassword';
+
 const LoginWithEmail = (props) => {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
@@ -21,16 +22,20 @@ const LoginWithEmail = (props) => {
 
     async function login(e) {
         e.preventDefault()
-        let firebaseAuthData = await signInWithEmail(email, password).catch(() => {
+        let firebaseAuthData = await signInWithEmail(email, password).catch((err) => {
+            console.log(err)
             setError(true);
             return;
         })
-        let userData = await getUser(firebaseAuthData.localId).catch(() => {
+        let userData = await getUser(firebaseAuthData.localId).catch((err) => {
+            console.log(err)
             setError(true)
         });
         if (error) {
             return;
         }
+        console.log(firebaseAuthData);
+        console.log(userData);
         userData.localId = firebaseAuthData.localId;
         userData.idToken = firebaseAuthData.idToken;
         console.log(userData)
